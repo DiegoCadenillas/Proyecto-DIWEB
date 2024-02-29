@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url("../img/fondo-body.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.container-login {
+  margin: auto;
+  border: solid lightseagreen 5px;
+  background-color: lightskyblue;
+  padding: 1rem;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.8rem;
+  min-height: 55%;
+  max-height: 90%;
+  min-width: 25%;
+  max-width: 50%;
+  overflow: auto;
+}
+
+h3,
+form {
+  margin: auto;
+}
+
+h3,
+label {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  border: solid lightseagreen 3px !important;
+}
+
+input::placeholder {
+  text-overflow: ellipsis !important;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
