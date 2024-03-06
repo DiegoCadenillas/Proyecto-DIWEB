@@ -105,7 +105,7 @@ body {
   background-color: lightskyblue;
   min-width: 80%;
   max-width: 100%;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -119,6 +119,11 @@ body {
   margin: auto;
 }
 
+.video {
+  min-width: 50%;
+  margin: 0;
+}
+
 .cuadro-llamada {
   background-color: #333333;
   border: solid 2px black;
@@ -126,7 +131,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   height: 50vh;
   gap: 1px;
   padding: 3vw 1vw;
@@ -142,6 +147,55 @@ body {
 }
 .cuadro-llamada h2 {
   text-align: center;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  width: 50%;
+  height: 100%;
+}
+
+.mensajes {
+  background-color: white;
+  height: 50vh;
+  width: 90%;
+  border: solid 0.33vw black;
+  border-radius: 2vw;
+  margin: auto;
+}
+
+.envio-mensaje {
+  max-width: 90%;
+  height: 20%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+.envio-mensaje #mensaje {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  word-break: normal;
+  flex-wrap: wrap;
+  overflow: visible;
+}
+.envio-mensaje button {
+  width: 50%;
+  height: 100%;
+  background-color: #82afee;
+  border: solid 0.33vw black;
+  border-radius: 50%;
+}
+.envio-mensaje button img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
 }
 
 footer {
