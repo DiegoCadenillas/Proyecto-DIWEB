@@ -1,0 +1,224 @@
+header {
+  background-color: lightskyblue;
+  min-width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5vh 1vh;
+  max-height: 10%;
+  align-items: center;
+  z-index: 1;
+  border-bottom: solid 0.33vw black;
+}
+header .datos-header {
+  padding: 0;
+  width: 20%;
+  height: 50%;
+}
+header .datos-header img {
+  height: 100%;
+  float: left;
+}
+header .datos-header h2 {
+  font-size: calc(3.3vh + 0.05rem);
+  text-align: left;
+  padding: 0;
+  margin-left: 7.5vh;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+header .navbar {
+  padding: 0;
+  width: 73%;
+  height: 50%;
+  float: right;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8vw;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header .navbar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(2.75vh + 0.05rem);
+}
+header .perfil-usuario {
+  width: 7%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+}
+header .perfil-usuario a {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .perfil-usuario a img {
+  height: 80%;
+}
+
+.perfil-usuario:hover {
+  transform: scale(1.25);
+}
+
+.sticky {
+  position: fixed;
+  min-width: 100%;
+  top: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url("../img/fondo-body.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #083454;
+}
+
+.container {
+  min-width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-citas {
+  width: 80%;
+  margin: 3vw;
+  padding: 1vw 1vw 3vw 1vw;
+  background-color: lightskyblue;
+  border: solid 0.33vw black;
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  align-self: center;
+}
+.container-citas h2 {
+  text-decoration: underline;
+  text-align: center;
+  margin: 4vh 0;
+}
+
+.cita {
+  width: 100%;
+  height: 15rem;
+  min-height: 25vh;
+  background-color: white;
+  padding: 1vw;
+  border: solid 0.16vw black;
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.datos-cita {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.65rem;
+}
+.datos-cita h5 {
+  font-weight: bold;
+}
+.datos-cita h5,
+.datos-cita p {
+  margin: 0;
+  font-size: calc(0.85vw + 0.5rem);
+}
+
+.foto-especialista {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.foto-especialista img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.botones-cita {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.botones-cita a {
+  border-radius: 2vw;
+  transition: 1s;
+}
+.botones-cita a:hover {
+  transform: scale(1.1);
+}
+.botones-cita a:hover .boton-sala {
+  background-color: #1d69d4;
+}
+
+.boton-sala {
+  width: 100%;
+  background-color: #3F84E5;
+  padding: 0.6rem;
+  color: white;
+  border: solid 0.16vw black;
+  border-radius: 2vw;
+  transition: 1s;
+}
+
+#boton-borrar {
+  background-color: rgb(253, 26, 26);
+  padding: 0.65rem;
+  border: solid 0.16vw black;
+  color: white;
+  border-radius: 2vw;
+  transition: 1s;
+}
+
+#boton-borrar:hover {
+  background-color: #e20202;
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: auto;
+  min-width: 100%;
+  height: 5vh;
+  box-sizing: border-box;
+  padding: 1vh 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: darkslategrey;
+  border-top: solid 0.33vw black;
+}
+footer p, footer a {
+  margin: auto;
+  padding: 0;
+  font-size: 2.5vh;
+  color: white;
+}/*# sourceMappingURL=gestion-de-citas.css.map */

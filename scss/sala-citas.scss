@@ -1,0 +1,12 @@
+// Importación de variables de color
+@import './colors';
+// Importación de SCSS del header
+@import './header';
+// Importación del SCSS del body
+@import './body';
+// Importación del SCSS de la clase container
+@import './container';
+// Importación de SCSS del contenido de la página (reutilización del SCSS de login.html)
+@import './body-sala-citas';
+// Importación de SCSS del footer
+@import './footer';

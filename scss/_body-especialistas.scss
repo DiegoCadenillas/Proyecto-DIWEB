@@ -1,0 +1,55 @@
+.grid-especialistas {
+    padding: 3vw 1vw;
+    margin: 3vw;
+    border-radius: 2vw;
+    border: solid 0.33vw black;
+    background-color: $colorPrincipal;
+    display: grid;
+    grid-template-rows: 1fr 8fr 8fr 8fr;
+    row-gap: 2vw;
+
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+
+.fila-especialistas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1vw;
+}
+
+.enlace-especialista {
+    width: 20%;
+    height: 100%;
+    margin: 0 2.5%;
+    padding: 0.66vw;
+    border-radius: 2vw;
+    background-color: $colorFondoItem;
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+    border: solid 0.16vw black;
+}
+
+.enlace-especialista:hover {
+    transform: scale(1.1);
+}
+
+.especialista {
+    display: flex;
+    flex-direction: column;
+
+    h5 {
+        font-weight: bold;
+        margin-top: 1vw;
+        padding-top: 1vw;
+        border-top: solid 1px black;
+    }
+
+    img {
+        width: 100%;
+    }
+}

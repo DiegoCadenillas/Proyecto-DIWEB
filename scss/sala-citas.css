@@ -1,0 +1,164 @@
+header {
+  background-color: lightskyblue;
+  min-width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5vh 1vh;
+  max-height: 10%;
+  align-items: center;
+  z-index: 1;
+  border-bottom: solid 0.33vw black;
+}
+header .datos-header {
+  padding: 0;
+  width: 20%;
+  height: 50%;
+}
+header .datos-header img {
+  height: 100%;
+  float: left;
+}
+header .datos-header h2 {
+  font-size: calc(3.3vh + 0.05rem);
+  text-align: left;
+  padding: 0;
+  margin-left: 7.5vh;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+header .navbar {
+  padding: 0;
+  width: 73%;
+  height: 50%;
+  float: right;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8vw;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header .navbar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(2.75vh + 0.05rem);
+}
+header .perfil-usuario {
+  width: 7%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+}
+header .perfil-usuario a {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .perfil-usuario a img {
+  height: 80%;
+}
+
+.perfil-usuario:hover {
+  transform: scale(1.25);
+}
+
+.sticky {
+  position: fixed;
+  min-width: 100%;
+  top: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url("../img/fondo-body.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #083454;
+}
+
+.container {
+  min-width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-llamada {
+  background-color: lightskyblue;
+  min-width: 80%;
+  max-width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3vw 1vw;
+  gap: 5vh;
+  margin: auto;
+  border: solid 0.33vw black;
+  border-radius: 2vw;
+}
+.container-llamada * {
+  margin: auto;
+}
+
+.cuadro-llamada {
+  background-color: #333333;
+  border: solid 2px black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  gap: 1px;
+  padding: 3vw 1vw;
+}
+.cuadro-llamada * {
+  margin: 0;
+  padding: 0;
+}
+.cuadro-llamada img {
+  height: 20%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.cuadro-llamada h2 {
+  text-align: center;
+}
+
+footer {
+  margin-top: auto;
+  min-width: 100%;
+  height: 5vh;
+  box-sizing: border-box;
+  padding: 1vh 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: darkslategrey;
+  border-top: solid 0.33vw black;
+}
+footer p, footer a {
+  margin: auto;
+  padding: 0;
+  font-size: 2.5vh;
+  color: white;
+}/*# sourceMappingURL=sala-citas.css.map */

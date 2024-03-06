@@ -1,0 +1,109 @@
+.container-citas {
+    width: 80%;
+    margin: 3vw;
+    padding: 1vw 1vw 3vw 1vw;
+    background-color: $colorPrincipal;
+    border: solid 0.33vw black;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    align-self: center;
+
+    h2 {
+        text-decoration: underline;
+        text-align: center;
+        margin: 4vh 0;
+    }
+}
+
+.cita {
+    width: 100%;
+    height: 15rem;
+    min-height: 25vh;
+    background-color: $colorFondoItem;
+    padding: 1vw;
+    border: solid 0.16vw black;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.datos-cita {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.65rem;
+
+    h5 {
+        font-weight: bold;
+    }
+
+    h5,
+    p {
+        margin: 0;
+        font-size: calc(0.85vw + 0.5rem);
+    }
+}
+
+.foto-especialista {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.botones-cita {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+        border-radius: 2vw;
+        transition: 1s;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+
+        .boton-sala {
+            background-color: darken($colorBoton, 10%);
+        }
+    }
+}
+
+.boton-sala {
+    width: 100%;
+    background-color: $colorBoton;
+    padding: 0.6rem;
+    color: white;
+    border: solid 0.16vw black;
+    border-radius: 2vw;
+    transition: 1s;
+}
+
+#boton-borrar {
+    background-color: $colorBorrar;
+    padding: 0.65rem;
+    border: solid 0.16vw black;
+    color: white;
+    border-radius: 2vw;
+    transition: 1s;
+}
+
+#boton-borrar:hover {
+    background-color: darken($colorBorrar, 10%);
+    transform: scale(1.1);
+}

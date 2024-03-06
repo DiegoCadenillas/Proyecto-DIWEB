@@ -1,0 +1,12 @@
+// Importación de los colores
+@import './colors';
+// Importación del código SCSS del header
+@import './header';
+// Importación del SCSS del body
+@import './body';
+// Importación del SCSS de la clase container
+@import './container';
+// Importación del código SCSS principal de la página
+@import './body-index';
+// Importación del código SCSS del footer
+@import './footer';

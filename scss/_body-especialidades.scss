@@ -1,0 +1,36 @@
+.contenido-pagina {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 3vw 5vw;
+}
+
+.enlace-especialidad {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.especialidad {
+    background-color: $colorFondoItem;
+    border: black solid 0.2vh;
+    border-radius: 1vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    transition: 1s;
+}
+
+.especialidad:hover {
+    transform: scale(1.10);
+}
+
+.text-content {
+    border: solid 0.05rem black;
+
+    h2 {
+        border-bottom: solid 0.05rem black;
+    }
+}
