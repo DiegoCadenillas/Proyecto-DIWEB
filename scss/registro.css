@@ -4,14 +4,13 @@ header {
   height: 10vh;
   display: flex;
   flex-direction: row;
-  padding: 0.5vh 1vh;
   max-height: 10%;
   align-items: center;
   z-index: 1;
   border-bottom: solid 0.33vw black;
 }
 header .datos-header {
-  padding: 0;
+  padding: 0 1vw;
   width: 20%;
   height: 50%;
 }
@@ -30,7 +29,7 @@ header .datos-header h2 {
 header .navbar {
   padding: 0;
   width: 73%;
-  height: 50%;
+  height: 80%;
   float: right;
   margin: 0 auto;
   box-sizing: border-box;
@@ -44,8 +43,22 @@ header .navbar a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: calc(2.75vh + 0.15rem);
+  min-height: 60%;
+  max-height: 100%;
+  min-width: 100px;
+  width: 20%;
+  font-size: 3vh;
   text-align: center;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  padding: 0.5vw 1.2vw;
+  border-radius: 2vw;
+  border: solid 0.16vw black;
+}
+header .navbar a:hover {
+  transition: 0.5s;
+  transform: scale(1.33);
 }
 header .perfil-usuario {
   width: 7%;
@@ -100,7 +113,7 @@ body {
 
 .container-login {
   margin: auto;
-  border: solid lightseagreen 5px;
+  border: solid black 0.33vw;
   background-color: lightskyblue;
   padding: 1rem;
   border-radius: 5%;
