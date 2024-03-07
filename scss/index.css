@@ -197,6 +197,12 @@ body {
   -webkit-hyphens: auto;
           hyphens: auto;
 }
+.content-item p {
+  word-wrap: normal;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
 .content-item h2 {
   max-width: 66%;
 }

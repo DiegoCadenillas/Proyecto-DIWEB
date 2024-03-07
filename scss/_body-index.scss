@@ -80,6 +80,12 @@
         word-break: break-all;
         hyphens: auto;
     }
+    
+    p {
+        word-wrap: normal;
+        word-break: break-word;
+        hyphens: auto;
+    }
 
     h2 {
         max-width: 66%;
