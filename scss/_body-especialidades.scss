@@ -15,12 +15,23 @@
 .especialidad {
     background-color: $colorPrincipal;
     border: black solid 0.33vw;
+    height: fit-content;
     border-radius: 1vw;
     padding: 1vw;
     display: flex;
     flex-direction: row;
-    gap: 1vw;
     transition: 1s;
+
+    img {
+        background-color: darken($colorFondoItem, 20%);
+        max-width: 33%;
+        min-height: 100%;
+        width: auto;
+        object-fit: cover;
+        border: solid 0.16vw black;
+        border-left: none;
+        object-position: bottom;
+    }
 }
 
 .especialidad:hover {
@@ -30,8 +41,14 @@
 .text-content {
     border: solid 0.16vw black;
     background-color: $colorFondoItem;
+    width: 100%;
 
     h2 {
         border-bottom: solid 0.05rem black;
+        padding: 1vh 2vw;
+    }
+
+    p {
+        padding: 0 2vw;
     }
 }
