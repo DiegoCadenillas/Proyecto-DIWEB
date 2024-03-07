@@ -44,7 +44,8 @@ header .navbar a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: calc(2.75vh + 0.05rem);
+  font-size: calc(2.75vh + 0.15rem);
+  text-align: center;
 }
 header .perfil-usuario {
   width: 7%;
@@ -103,8 +104,7 @@ body {
 
 .container-llamada {
   background-color: lightskyblue;
-  min-width: 80%;
-  max-width: 100%;
+  width: 90%;
   height: 80vh;
   display: flex;
   flex-direction: row;
@@ -120,8 +120,11 @@ body {
 }
 
 .video {
-  min-width: 50%;
+  width: 50%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
 }
 
 .cuadro-llamada {
@@ -130,23 +133,60 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 90%;
   height: 50vh;
   gap: 1px;
   padding: 3vw 1vw;
+  overflow: auto;
 }
 .cuadro-llamada * {
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 .cuadro-llamada img {
+  min-height: 20%;
   height: 20%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .cuadro-llamada h2 {
   text-align: center;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+
+.controles-llamada {
+  height: 20%;
+  padding: 0.8vw;
+  display: flex;
+  justify-content: space-between;
+}
+.controles-llamada a,
+.controles-llamada div {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+.controles-llamada .boton {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: solid 0.2vw black;
+  border-radius: 50%;
+  padding: 0.5vw;
+  cursor: pointer;
+}
+.controles-llamada .colgar {
+  background-color: red;
+}
+.controles-llamada .mutear,
+.controles-llamada .silenciar {
+  background-color: white;
 }
 
 .chat {
@@ -159,35 +199,48 @@ body {
 
 .mensajes {
   background-color: white;
-  height: 50vh;
+  min-height: 50vh;
+  max-height: 50vh;
   width: 90%;
   border: solid 0.33vw black;
   border-radius: 2vw;
   margin: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1.75vw;
+}
+.mensajes p {
+  word-wrap: normal;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 .envio-mensaje {
-  max-width: 90%;
+  width: 90%;
   height: 20%;
-  margin: auto;
   display: flex;
   flex-direction: row;
   gap: 10%;
 }
 .envio-mensaje #mensaje {
   width: 70%;
-  height: 50%;
+  min-height: 100%;
+  max-height: 100%;
   display: flex;
   word-break: normal;
   flex-wrap: wrap;
   overflow: visible;
 }
 .envio-mensaje button {
-  width: 50%;
+  width: 17.5%;
   height: 100%;
   background-color: #82afee;
   border: solid 0.33vw black;
   border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 .envio-mensaje button img {
   -o-object-fit: contain;
@@ -201,7 +254,7 @@ body {
 footer {
   margin-top: auto;
   min-width: 100%;
-  height: 5vh;
+  height: 10vh;
   box-sizing: border-box;
   padding: 1vh 2vh;
   display: flex;

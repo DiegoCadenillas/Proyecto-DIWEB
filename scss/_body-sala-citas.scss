@@ -1,7 +1,6 @@
 .container-llamada {
     background-color: $colorPrincipal;
-    min-width: 80%;
-    max-width: 100%;
+    width: 90%;
     height: 80vh;
     display: flex;
     flex-direction: row;
@@ -18,8 +17,11 @@
 }
 
 .video {
-    min-width: 50%;
+    width: 50%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
 }
 
 .cuadro-llamada {
@@ -28,24 +30,63 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 90%;
     height: 50vh;
     gap: 1px;
     padding: 3vw 1vw;
+    overflow: auto;
 
     * {
-        margin: 0;
+        margin: auto;
         padding: 0;
     }
 
     img {
+        min-height: 20%;
         height: 20%;
         object-fit: contain;
     }
 
     h2 {
         text-align: center;
+        hyphens: auto;
+    }
+}
+
+.controles-llamada {
+    height: 20%;
+    padding: 0.8vw;
+    display: flex;
+    justify-content: space-between;
+
+    a,
+    div {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .boton {
+        max-height: 100%;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        object-fit: contain;
+        border: solid 0.2vw black;
+        border-radius: 50%;
+        padding: 0.5vw;
+        cursor: pointer;
+    }
+
+    .colgar {
+        background-color: red;
+    }
+
+    .mutear,
+    .silenciar {
+        background-color: white;
     }
 }
 
@@ -59,24 +100,34 @@
 
 .mensajes {
     background-color: white;
-    height: 50vh;
+    min-height: 50vh;
+    max-height: 50vh;
     width: 90%;
     border: solid 0.33vw black;
     border-radius: 2vw;
     margin: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1.75vw;
+
+    p {
+        word-wrap: normal;
+        word-break: break-word;
+        hyphens: auto;
+    }
 }
 
 .envio-mensaje {
-    max-width: 90%;
+    width: 90%;
     height: 20%;
-    margin: auto;
     display: flex;
     flex-direction: row;
     gap: 10%;
 
     #mensaje {
         width: 70%;
-        height: 50%;
+        min-height: 100%;
+        max-height: 100%;
         display: flex;
         word-break: normal;
         flex-wrap: wrap;
@@ -84,11 +135,14 @@
     }
 
     button {
-        width: 50%;
+        width: 17.5%;
         height: 100%;
         background-color: lighten($colorBoton, 15%);
         border: solid 0.33vw black;
         border-radius: 50%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
 
         img {
             object-fit: contain;
