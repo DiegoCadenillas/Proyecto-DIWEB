@@ -105,6 +105,10 @@ body {
   background-color: #083454;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 body {
   display: flex;
   flex-direction: column;
