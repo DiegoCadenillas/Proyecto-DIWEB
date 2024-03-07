@@ -16,6 +16,20 @@
     }
 }
 
+.barra-busqueda {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        width: 15%;
+    }
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -85,7 +99,7 @@
         word-break: break-all;
         hyphens: auto;
     }
-    
+
     p {
         word-wrap: normal;
         word-break: break-word;
@@ -94,6 +108,9 @@
 
     h2 {
         max-width: 66%;
+        word-wrap: normal;
+        word-break: keep-all;
+        hyphens: auto;
     }
 
     audio: {

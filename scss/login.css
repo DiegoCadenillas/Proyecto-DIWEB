@@ -122,9 +122,9 @@ header .navbar a:hover {
   top: 0;
 }
 
-@media only screen and (max-width: 1340px) {
+@media only screen and (max-width: 13in) {
   header {
-    height: 20vh;
+    height: 15vh;
   }
 }
 * {
